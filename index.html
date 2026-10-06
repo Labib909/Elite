@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Elite Welfare Foundation — a voluntary, non-political organization working for humanitarian support, education, healthcare, women's empowerment and social development across Bangladesh.">
+  <meta name="description" content="Elite Welfare Foundation — একটি অলাভজনক, অরাজনৈতিক ও সমাজসেবামূলক উন্নয়ন সংস্থা, যা সমগ্র বাংলাদেশে টেকসই উন্নয়ন, সামাজিক অন্তর্ভুক্তি ও মানবিক সেবায় কাজ করছে।">
+  <meta name="theme-color" content="#0b1220">
   <title>Elite Welfare Foundation | Bangladesh</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +13,8 @@
   <link rel="icon" type="image/jpeg" href="assets/logo.jpeg">
 </head>
 <body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
   <header class="site-header" id="home">
     <div class="container nav-wrap">
       <a class="brand" href="#home" aria-label="Elite Welfare Foundation home">
@@ -22,98 +25,140 @@
         <a href="#home">Home</a>
         <a href="#about">About Us</a>
         <a href="#programs">Our Programs</a>
+        <a href="#project">Ongoing Project</a>
         <a href="#chairman">Chairman’s Message</a>
         <a href="#gallery">Gallery</a>
         <a href="#donate">Donations</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
+
     <div class="hero">
-      <div class="hero-overlay"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-orb hero-orb-one"></div>
+      <div class="hero-orb hero-orb-two"></div>
       <div class="container hero-content">
-        <span class="eyebrow">Serving people • Empowering communities • Building hope</span>
-        <h1>Building a self-reliant, equitable & humane society.</h1>
-        <p class="hero-bn">মানবিকতা, শিক্ষা, স্বাস্থ্যসেবা ও নারীর ক্ষমতায়নের মাধ্যমে একটি সুন্দর ও প্রগতিশীল সমাজ গড়ে তোলার প্রত্যয়।</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#programs">Explore Our Programs</a>
-          <a class="btn btn-light" href="#donate">Support Our Work</a>
+        <div class="hero-copy reveal">
+          <span class="eyebrow"><span class="eyebrow-dot"></span>Elite Welfare Foundation • Bangladesh</span>
+          <h1>একটি সুন্দর, সমৃদ্ধ ও মানবিক সমাজের জন্য <em>একসাথে।</em></h1>
+          <p class="hero-subtitle">মানবিকতা, শিক্ষা, স্বাস্থ্যসেবা, দক্ষতা উন্নয়ন ও সামাজিক ক্ষমতায়নের মাধ্যমে মানুষের পাশে থাকার আমাদের অঙ্গীকার।</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#project">চলমান প্রকল্প দেখুন <span>↗</span></a>
+            <a class="btn btn-ghost" href="#about">আমাদের সম্পর্কে <span>↓</span></a>
+          </div>
+          <div class="hero-meta">
+            <span><b>বাংলাদেশব্যাপী</b> কার্যক্রম</span>
+            <span><b>S-14917/2026</b> নিবন্ধন</span>
+            <span><b>01733368444</b> যোগাযোগ</span>
+          </div>
         </div>
-        <div class="hero-meta">
-          <span>🇧🇩 All over Bangladesh</span>
-          <span>Registration: S-14918/26</span>
-          <span>+88 01733368444</span>
+        <div class="hero-side reveal reveal-delay">
+          <div class="hero-logo-card">
+            <div class="hero-logo-ring"></div>
+            <img src="assets/logo.jpeg" alt="Elite Welfare Foundation logo">
+          </div>
+          <div class="floating-note note-one"><span>01</span><strong>মানবিক সেবা</strong><small>মানুষের পাশে, প্রয়োজনের সময়ে</small></div>
+          <div class="floating-note note-two"><span>02</span><strong>ক্ষমতায়ন</strong><small>সহায়তার পাশাপাশি সক্ষমতা</small></div>
         </div>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="intro-strip">
-      <div class="container stats">
-        <div><strong>Bangladesh-wide</strong><span>Working / operational area</span></div>
-        <div><strong>Humanitarian</strong><span>Voluntary & non-political organization</span></div>
-        <div><strong>Women-focused</strong><span>Empowerment, education & support</span></div>
-        <div><strong>Community-led</strong><span>Programs for underserved people</span></div>
+    <section class="impact-bar">
+      <div class="container impact-grid">
+        <div class="impact-item"><span class="impact-number">01</span><div><strong>সামাজিক অন্তর্ভুক্তি</strong><small>প্রান্তিক মানুষের জন্য</small></div></div>
+        <div class="impact-item"><span class="impact-number">02</span><div><strong>দক্ষতা উন্নয়ন</strong><small>কর্মসংস্থান ও আত্মনির্ভরতা</small></div></div>
+        <div class="impact-item"><span class="impact-number">03</span><div><strong>স্বাস্থ্যসেবা</strong><small>চিকিৎসা ও পুনর্বাসন</small></div></div>
+        <div class="impact-item"><span class="impact-number">04</span><div><strong>মানবিক সহায়তা</strong><small>জরুরি ও দীর্ঘমেয়াদি সহায়তা</small></div></div>
       </div>
     </section>
 
-    <section class="section" id="about">
-      <div class="container two-col">
-        <div>
-          <span class="section-kicker">About Us</span>
-          <h2>Standing beside people who need support.</h2>
-          <p class="lead">Elite Welfare Foundation is a voluntary, non-political organization committed to humanitarian service, education, healthcare, poverty reduction and socio-economic empowerment—especially for women, children and underserved communities.</p>
-          <p>বর্তমানে সংস্থার প্রধান কার্যালয় নাটোরের লালপুরে অবস্থিত এবং সমগ্র বাংলাদেশে কার্যক্রম পরিচালনা করা হচ্ছে।</p>
-          <div class="info-list">
-            <div><span>Registration</span><strong>এস -১৪৯১৮/২৬</strong></div>
-            <div><span>Current Head Office</span><strong>লালপুর-৬৪২১, নাটোর, বাংলাদেশ</strong></div>
-            <div><span>Registered Office</span><strong>House-1/1, Road-13, Block-D, Mirpur-6, Dhaka</strong></div>
-            <div><span>Email</span><strong>elitewf02@gmail.com</strong></div>
-          </div>
-        </div>
-        <div class="image-card">
-          <img src="assets/placeholder-about.svg" alt="Placeholder for Elite Welfare Foundation community photo">
-          <div class="image-caption">Replace this image with your organization / community photo.</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft" id="programs">
+    <section class="section about-section" id="about">
       <div class="container">
-        <div class="section-heading centered">
-          <span class="section-kicker">Our Programs</span>
-          <h2>Programs designed around real community needs.</h2>
-          <p>Our objectives cover education, healthcare, women's empowerment, humanitarian response, legal awareness, climate resilience and livelihood development.</p>
-        </div>
-        <div class="program-grid">
-          <article class="program-card"><span class="icon">🎓</span><h3>Education & Skills</h3><p>Scholarships, technical education, training centers, libraries and learning opportunities for people from all communities.</p><p class="bn">নারী ও সাধারণ মানুষের শিক্ষা, প্রশিক্ষণ ও পাঠাভ্যাস গড়ে তোলার উদ্যোগ।</p></article>
-          <article class="program-card"><span class="icon">🩺</span><h3>Healthcare & Humanitarian Aid</h3><p>Medical support, health awareness, clinical services, mental health, rehabilitation and assistance for people with disabilities.</p><p class="bn">ফ্রি মেডিকেল ক্যাম্প, প্রাথমিক ওষুধ, স্বাস্থ্য পরীক্ষা ও সচেতনতামূলক সেবা।</p></article>
-          <article class="program-card"><span class="icon">👩‍💼</span><h3>Women’s Empowerment</h3><p>Socio-economic empowerment, vocational training, self-employment and support for distressed and disadvantaged women.</p><p class="bn">নারীদের আর্থ-সামাজিক ক্ষমতায়ন ও আত্মকর্মসংস্থানের সুযোগ সৃষ্টি।</p></article>
-          <article class="program-card"><span class="icon">🆘</span><h3>Relief & Disaster Response</h3><p>Relief and rehabilitation for poor, shelter-less and disaster-affected people, including emergency community support.</p><p class="bn">দুর্যোগ, শীত, বন্যা ও সংকটের সময় ত্রাণ ও পুনর্বাসন সহায়তা।</p></article>
-          <article class="program-card"><span class="icon">⚖️</span><h3>Rights & Legal Support</h3><p>Awareness and legal aid around domestic violence, social security, family matters and civil/criminal issues affecting women and children.</p><p class="bn">নারী ও শিশুর অধিকার, পারিবারিক সহিংসতা ও আইনি সহায়তা সম্পর্কে সচেতনতা।</p></article>
-          <article class="program-card"><span class="icon">🌱</span><h3>Climate & Livelihoods</h3><p>Poverty reduction through agriculture, infrastructure, cultural development, climate awareness and livelihood-oriented activities.</p><p class="bn">কৃষি উন্নয়ন, জলবায়ু সচেতনতা ও টেকসই জীবিকা উন্নয়নে কাজ।</p></article>
+        <div class="section-heading split-heading reveal">
+          <div><span class="section-kicker">About Us</span><h2>মানুষকে শুধু সহায়তা নয়,<br><span>নিজের পায়ে দাঁড়ানোর সুযোগ।</span></h2></div>
+          <p>আমাদের কাজের ভিত্তি হলো অন্তর্ভুক্তি, দক্ষতা, স্বাস্থ্য ও টেকসই উন্নয়ন।</p>
         </div>
 
-        <div class="featured-project">
-          <div>
-            <span class="section-kicker">Featured Project</span>
-            <h3>প্রান্তিক মানুষের দোরগোড়ায় স্বাস্থ্যসেবা</h3>
-            <p>একটি সামাজিক হেলথ ক্যাম্প উদ্যোগের মাধ্যমে লালপুর উপজেলা, নাটোর / চরাঞ্চল এলাকার প্রান্তিক মানুষের কাছে বিনামূল্যে প্রাথমিক স্বাস্থ্যসেবা পৌঁছে দেওয়ার পরিকল্পনা।</p>
+        <div class="about-panel reveal">
+          <div class="about-main bn">
+            <p>এলিট ওয়েলফেয়ার ফাউন্ডেশন (Elite Welfare Foundation) একটি অলাভজনক, অরাজনৈতিক এবং সমাজসেবামূলক উন্নয়ন সংস্থা। গভঃ রেজি নংঃ এস-১৪৯১৭/২০২৬ (S-14917/2026)</p>
+            <p>স্থানীয় ও জাতীয় পর্যায়ে টেকসই উন্নয়ন, সামাজিক অন্তর্ভুক্তি এবং প্রান্তিক জনগোষ্ঠীর জীবনযাত্রার মানোন্নয়নে সংস্থাটি সমগ্র বাংলাদেশে প্রতিশ্রুতিবদ্ধভাবে কাজ করে যাচ্ছে। নাটোর ও রাজশাহী চরঅঞ্চলকে মূল কর্মক্ষেত্র হিসেবে বিবেচনা করে, উদ্ভাবনী সামাজিক উদ্যোগ ও অংশীদারিত্বের মাধ্যমে একটি স্বাবলম্বী ও সমৃদ্ধ সমাজ বিনির্মাণই আমাদের প্রধান উদ্দেশ্য।</p>
+
+            <h3>​আমাদের মূল কর্মক্ষেত্রসমূহ (Core Focus Areas)</h3>
+            <p>​নারী ক্ষমতায়ন ও উদ্যোক্তা উন্নয়ন: প্রান্তিক নারী উদ্যোক্তাদের জন্য প্ল্যাটফর্ম তৈরি, ব্যবসায়িক দক্ষতা বৃদ্ধি এবং অর্থনৈতিক আত্মনির্ভরশীলতা অর্জনে সহায়তা প্রদান।</p>
+            <p>​কারিগরি ও দক্ষতা উন্নয়ন প্রশিক্ষণ: যুবসমাজ ও সম্ভাবনাময় জনগোষ্ঠীকে আধুনিক বৃত্তিমূলক ও প্রযুক্তিগত প্রশিক্ষণের মাধ্যমে দক্ষ মানবসম্পদে রূপান্তর।</p>
+            <p>​স্বাস্থ্যসেবা ও শারীরিক
+
+ পুনর্বাসন: সুবিধাবঞ্চিত ও শারীরিকভাবে চ্যালেঞ্জড ব্যক্তিদের জন্য বিশেষায়িত চিকিৎসা, থেরাপি এবং পুনর্বাসন সুবিধা নিশ্চিতকরণ।</p>
+            <p>​সামাজিক নিরাপত্তা ও মানবসেবা: দুস্থ, বয়োবৃদ্ধ ও ঝুঁকিপূর্ণ জনগোষ্ঠীর মৌলিক চাহিদা পূরণ এবং জরুরি সামাজিক সহায়তা কর্মসূচি পরিচালনা।</p>
+
+            <h3>​প্রাতিষ্ঠানিক লক্ষ্য ও দৃষ্টিভঙ্গি (Vision & Mission)</h3>
+            <h4>​আমাদের ভিশন (Vision)</h4>
+            <p>​একটি বৈষম্যহীন, দারিদ্র্যমুক্ত ও প্রযুক্তিবান্ধব সমাজ গঠন—যেখানে প্রতিটি নাগরিক নিজস্ব দক্ষতা ও সম্ভাবনার পূর্ণ বিকাশ ঘটিয়ে আত্মমর্যাদার সাথে বসবাস করবে।</p>
+            <h4>​আমাদের মিশন (Mission)</h4>
+            <p>​অন্তর্ভুক্তিমূলক শিক্ষা, কারিগরি প্রশিক্ষণ এবং ক্ষুদ্র উদ্যোক্তা তৈরির মাধ্যমে কর্মসংস্থান ও আয়বর্ধনমূলক সুযোগ সৃষ্টি করা।</p>
+            <p>​সরকারি ও বেসরকারি (Public-Private Partnership) সংস্থা এবং নীতি-নির্ধারকদের সাথে কৌশলগত সহযোগিতা জোরদার করা।</p>
+            <p>​তথ্যভিত্তিক, স্বচ্ছ ও ফলাফলমুখী সামাজিক প্রকল্প বাস্তবায়নের মাধ্যমে প্রান্তিক জনগোষ্ঠীর টেকসই উন্নয়ন সুনিশ্চিত করা।</p>
+
+            <h3>​আমাদের পরিচালনা নীতি ও মূল্যবোধ (Core Values)</h3>
+            <p>​স্বচ্ছতা ও জবাবদিহিতা (Transparency & Accountability): আমাদের প্রতিটি উদ্যোগ ও অর্থনৈতিক পরিচালনায় আন্তর্জাতিক মানদণ্ড ও সততা বজায় রাখা।</p>
+            <p>​অন্তর্ভুক্তিমূলক উন্নয়ন (Inclusivity): ধর্ম, বর্ণ, লিঙ্গ বা শ্রেণি নির্বিশেষে সমাজের সকল স্তরের মানুষকে সমান গুরুত্ব প্রদান।</p>
+            <p>​টেকসই সমাধান (Sustainability): সাময়িক ত্রাণের পরিবর্তে দীর্ঘমেয়াদী সক্ষমতা বৃদ্ধি ও স্বাবলম্বিতা অর্জনকে অগ্রাধিকার দেওয়া।</p>
+
+            <h3>​নির্বাহী বার্তা (Executive Message)</h3>
+            <blockquote>​"এলিট ওয়েলফেয়ার ফাউন্ডেশনে আমরা বিশ্বাস করি—প্রকৃত উন্নয়ন ঘটে তখন, যখন সমাজের প্রতিটি মানুষ তার পূর্ণ সম্ভাবনায় পৌঁছানোর সুযোগ পায়। আমাদের লক্ষ্য কেবল সহায়তা করা নয়, বরং প্রতিটি মানুষকে নিজ পায়ে দাঁড়ানোর শক্তি ও সুযোগ জুগিয়ে দেওয়া। একটি সুন্দর ও প্রগতিশীল আগামী নির্মাণে আমরা আপনাদের সকলের সহযোগিতা ও অংশগ্রহণ কামনা করি।"</blockquote>
           </div>
-          <div class="project-facts">
-            <div><strong>1,000–1,500</strong><span>সম্ভাব্য সেবাগ্রহীতা</span></div>
-            <div><strong>৳2.55–3.15 লাখ</strong><span>প্রস্তাবিত মোট বাজেট</span></div>
-            <div><strong>Free</strong><span>প্রাথমিক ওষুধ ও স্বাস্থ্য পরীক্ষা</span></div>
+          <aside class="about-aside">
+            <div class="aside-logo"><img src="assets/logo.jpeg" alt="Elite Welfare Foundation logo"></div>
+            <div class="aside-fact"><span>বর্তমান প্রধান কার্যালয়</span><strong>নাটোর, লালপুর</strong><small>সমগ্র বাংলাদেশে কার্যক্রম</small></div>
+            <div class="aside-fact"><span>নিবন্ধন</span><strong>S-14917/2026</strong><small>গভঃ রেজি নং</small></div>
+            <a class="aside-link" href="#legal">সংঘস্মারক দেখুন <span>→</span></a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section programs-section" id="programs">
+      <div class="container">
+        <div class="section-heading centered reveal"><span class="section-kicker">Our Programs</span><h2>কাজের ক্ষেত্র অনেক,<br><span>লক্ষ্য এক—মানুষের উন্নয়ন।</span></h2><p>শিক্ষা, স্বাস্থ্য, নারী ক্ষমতায়ন, মানবিক সহায়তা, অধিকার, জলবায়ু ও জীবিকা উন্নয়নে আমাদের কাজ বিস্তৃত।</p></div>
+        <div class="program-grid">
+          <article class="program-card reveal"><div class="card-top"><span class="program-index">01</span><span class="program-icon">↗</span></div><h3>Education & Skills</h3><p>Scholarships, technical education, training centers, libraries and learning opportunities for people from all communities.</p><p class="bn">নারী ও সাধারণ মানুষের শিক্ষা, প্রশিক্ষণ ও পাঠাভ্যাস গড়ে তোলার উদ্যোগ।</p></article>
+          <article class="program-card reveal"><div class="card-top"><span class="program-index">02</span><span class="program-icon">+</span></div><h3>Healthcare & Humanitarian Aid</h3><p>Medical support, health awareness, clinical services, mental health, rehabilitation and assistance for people with disabilities.</p><p class="bn">ফ্রি মেডিকেল ক্যাম্প, স্বাস্থ্যসেবা, পুনর্বাসন ও মানবিক সহায়তা।</p></article>
+          <article class="program-card reveal"><div class="card-top"><span class="program-index">03</span><span class="program-icon">↗</span></div><h3>Women’s Empowerment</h3><p>Socio-economic empowerment, vocational training, self-employment and support for distressed and disadvantaged women.</p><p class="bn">নারীদের আর্থ-সামাজিক ক্ষমতায়ন ও আত্মকর্মসংস্থানের সুযোগ সৃষ্টি।</p></article>
+          <article class="program-card reveal"><div class="card-top"><span class="program-index">04</span><span class="program-icon">+</span></div><h3>Relief & Disaster Response</h3><p>Relief and rehabilitation for poor, shelter-less and disaster-affected people, including emergency community support.</p><p class="bn">দুর্যোগ, শীত, বন্যা ও সংকটের সময় ত্রাণ ও পুনর্বাসন সহায়তা।</p></article>
+          <article class="program-card reveal"><div class="card-top"><span class="program-index">05</span><span class="program-icon">↗</span></div><h3>Rights & Legal Support</h3><p>Awareness and legal aid around domestic violence, social security, family matters and civil/criminal issues affecting women and children.</p><p class="bn">নারী ও শিশুর অধিকার, পারিবারিক সহিংসতা ও আইনি সহায়তা সম্পর্কে সচেতনতা।</p></article>
+          <article class="program-card reveal"><div class="card-top"><span class="program-index">06</span><span class="program-icon">+</span></div><h3>Climate & Livelihoods</h3><p>Poverty reduction through agriculture, infrastructure, cultural development, climate awareness and livelihood-oriented activities.</p><p class="bn">কৃষি উন্নয়ন, জলবায়ু সচেতনতা ও টেকসই জীবিকা উন্নয়নে কাজ।</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section project-section" id="project">
+      <div class="container">
+        <div class="project-shell reveal">
+          <div class="project-image-wrap">
+            <img src="assets/placeholder-gallery.svg" alt="চলমান ফিজিওথেরাপি ও পুনর্বাসন প্রকল্পের জন্য ছবি — পরে আসল ছবি দিয়ে প্রতিস্থাপন করুন">
+            <span class="project-image-label">ছবি পরে পরিবর্তন করুন</span>
+          </div>
+          <div class="project-copy bn">
+            <div class="project-status"><span></span> চলমান প্রকল্প</div>
+            <span class="section-kicker">Ongoing Project</span>
+            <h2>সুবিধাবঞ্চিত প্যারালাইজড রোগীদের জন্য বিনামূল্যে সেবা</h2>
+            <p class="project-lead">সুবিধাবঞ্চিত  প্যারালাইজড রোগীদের বিনামূল্যে ফিজিওথেরাপি ও পরিবহন এবং পুনর্বাসনসেবা  চালু আছে।</p>
+            <div class="project-tags"><span>বিনামূল্যে ফিজিওথেরাপি</span><span>পরিবহন</span><span>পুনর্বাসনসেবা</span></div>
+            <div class="project-footer">
+              <div><small>আপডেট</small><strong>সেবা কার্যক্রম চালু আছে</strong></div>
+              <a class="btn btn-dark" href="https://www.facebook.com/search/top?q=Elite%20Welfare%20Foundation" target="_blank" rel="noopener">Facebook Page <span>↗</span></a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="chairman">
-      <div class="container chairman-wrap">
-        <div class="chairman-photo">
-          <img src="assets/placeholder-chairman.svg" alt="Placeholder for Chairman portrait">
-        </div>
+    <section class="section chairman-section" id="chairman">
+      <div class="container chairman-wrap reveal">
+        <div class="chairman-photo"><img src="assets/placeholder-chairman.svg" alt="Chairman portrait placeholder"></div>
         <div class="message">
           <span class="section-kicker">Chairman’s Message</span>
           <h2>“Let us join hands and spread the light of hope.”</h2>
@@ -123,12 +168,7 @@
             <p><strong>'Elite Welfare Foundation'</strong> has been established with a firm commitment to building a self-reliant, equitable, and humane society. Our core objective is to stand beside the neglected, underprivileged, and backward communities of society and improve their quality of life.</p>
             <p>We believe that serving humanity is the highest virtue. To build a beautiful and progressive society, each of us must step forward to fulfill our social responsibilities. Our foundation is working tirelessly to ensure education, poverty alleviation, healthcare services, and to empower the youth with appropriate employment skills.</p>
             <h4>Our Major Activities</h4>
-            <ul>
-              <li><strong>Education and Skill Development:</strong> Providing scholarships to poor and meritorious students and creating opportunities for technical education.</li>
-              <li><strong>Healthcare and Humanitarian Assistance:</strong> Free medical camps, medicine distribution, and standing by helpless people in times of crisis.</li>
-              <li><strong>Self-Employment Generation:</strong> Financial assistance and vocational training to empower distressed women and unemployed youth.</li>
-              <li><strong>Disaster Management:</strong> Conducting swift relief and rehabilitation programs during floods, winters, and natural disasters.</li>
-            </ul>
+            <ul><li><strong>Education and Skill Development:</strong> Providing scholarships to poor and meritorious students and creating opportunities for technical education.</li><li><strong>Healthcare and Humanitarian Assistance:</strong> Free medical camps, medicine distribution, and standing by helpless people in times of crisis.</li><li><strong>Self-Employment Generation:</strong> Financial assistance and vocational training to empower distressed women and unemployed youth.</li><li><strong>Disaster Management:</strong> Conducting swift relief and rehabilitation programs during floods, winters, and natural disasters.</li></ul>
             <p>This journey of ours is not merely an individual initiative; rather, it stands on the love, cooperation, and prayers of all of you. Let us join hands, unite, and dispel the darkness of society to spread the light of hope.</p>
             <p>Wishing you all good health, success, and overall well-being.</p>
           </div>
@@ -137,44 +177,43 @@
       </div>
     </section>
 
-    <section class="section section-soft" id="gallery">
+    <section class="section gallery-section" id="gallery">
       <div class="container">
-        <div class="section-heading centered">
-          <span class="section-kicker">Gallery</span>
-          <h2>Our work in pictures.</h2>
-          <p>These are placeholders—replace the files in <code>assets/</code> with your own photos.</p>
-        </div>
+        <div class="section-heading split-heading reveal"><div><span class="section-kicker">Gallery</span><h2>আমাদের কাজের<br><span>কিছু মুহূর্ত।</span></h2></div><p>এখানে আপনার বাস্তব কার্যক্রমের ছবি বসিয়ে দিন। ছবিতে ক্লিক করলে বড় করে দেখা যাবে।</p></div>
         <div class="gallery-grid">
-          <img src="assets/placeholder-gallery.svg" alt="Gallery placeholder 1">
-          <img src="assets/placeholder-gallery.svg" alt="Gallery placeholder 2">
-          <img src="assets/placeholder-gallery.svg" alt="Gallery placeholder 3">
-          <img src="assets/placeholder-gallery.svg" alt="Gallery placeholder 4">
-          <img src="assets/placeholder-gallery.svg" alt="Gallery placeholder 5">
-          <img src="assets/placeholder-gallery.svg" alt="Gallery placeholder 6">
+          <button class="gallery-item reveal" data-image="assets/placeholder-gallery.svg" aria-label="Open gallery image 1"><img src="assets/placeholder-gallery.svg" alt="Gallery placeholder 1"><span>01</span></button>
+          <button class="gallery-item reveal" data-image="assets/placeholder-gallery.svg" aria-label="Open gallery image 2"><img src="assets/placeholder-gallery.svg" alt="Gallery placeholder 2"><span>02</span></button>
+          <button class="gallery-item reveal" data-image="assets/placeholder-gallery.svg" aria-label="Open gallery image 3"><img src="assets/placeholder-gallery.svg" alt="Gallery placeholder 3"><span>03</span></button>
+          <button class="gallery-item reveal" data-image="assets/placeholder-gallery.svg" aria-label="Open gallery image 4"><img src="assets/placeholder-gallery.svg" alt="Gallery placeholder 4"><span>04</span></button>
+          <button class="gallery-item reveal" data-image="assets/placeholder-gallery.svg" aria-label="Open gallery image 5"><img src="assets/placeholder-gallery.svg" alt="Gallery placeholder 5"><span>05</span></button>
+          <button class="gallery-item reveal" data-image="assets/placeholder-gallery.svg" aria-label="Open gallery image 6"><img src="assets/placeholder-gallery.svg" alt="Gallery placeholder 6"><span>06</span></button>
         </div>
       </div>
     </section>
 
     <section class="section donation-section" id="donate">
-      <div class="container donation-wrap">
-        <div>
-          <span class="section-kicker">Donations</span>
-          <h2>Your support can help turn a plan into real impact.</h2>
-          <p>Donations can support humanitarian assistance, healthcare camps, education, skills development, women's empowerment and disaster response.</p>
-          <p class="bn">আপনার সহায়তা মানুষের জীবনমান উন্নয়নে আমাদের কার্যক্রমকে আরও বিস্তৃত করতে সাহায্য করবে।</p>
-        </div>
-        <div class="bank-card">
-          <span class="bank-label">Donation Details</span>
-          <div class="bank-row"><span>Account Name</span><strong>Elite Welfare Foundation</strong></div>
-          <div class="bank-row"><span>Account No.</span><strong class="account-number">1351100573663</strong></div>
-          <div class="bank-row"><span>Bank</span><strong>Dutch-Bangla Bank (PLC)</strong></div>
-          <div class="bank-row"><span>Branch</span><strong>Rajshahi</strong></div>
-          <button class="btn btn-dark copy-btn" data-copy="1351100573663">Copy Account Number</button>
-          <small id="copy-status" aria-live="polite"></small>
+      <div class="container">
+        <div class="section-heading split-heading reveal"><div><span class="section-kicker">Donations</span><h2>আপনার সহায়তা<br><span>কাজকে আরও দূরে নিয়ে যাবে।</span></h2></div><p>মানবিক সহায়তা, স্বাস্থ্যসেবা, শিক্ষা, দক্ষতা উন্নয়ন ও নারীর ক্ষমতায়নে আপনার অনুদান গুরুত্বপূর্ণ ভূমিকা রাখে।</p></div>
+        <div class="donation-grid reveal">
+          <div class="donation-card bank-card">
+            <div class="donation-card-head"><span class="method-number">01</span><div><small>Bank Transfer</small><h3>ব্যাংক অনুদান</h3></div></div>
+            <div class="bank-row"><span>Account Name</span><strong>Elite Welfare Foundation</strong></div>
+            <div class="bank-row"><span>Account No.</span><strong class="account-number">1351100573663</strong></div>
+            <div class="bank-row"><span>Bank</span><strong>Dutch-Bangla Bank (PLC)</strong></div>
+            <div class="bank-row"><span>Branch</span><strong>Rajshahi</strong></div>
+            <button class="btn btn-dark copy-btn" data-copy="1351100573663">Copy Account Number</button>
+            <small id="copy-status" class="copy-status" aria-live="polite"></small>
+          </div>
+          <div class="donation-card bkash-card">
+            <div class="donation-card-head"><span class="method-number">02</span><div><small>বিকাশ পেমেন্ট</small><h3>বিকাশে অনুদান</h3></div></div>
+            <div class="bkash-number">01763388121</div>
+            <p>এই নম্বরে বিকাশ পেমেন্টের মাধ্যমে আপনার অনুদান পাঠাতে পারেন। অনুদান পাঠানোর পর প্রয়োজনে আমাদের সাথে যোগাযোগ করুন।</p>
+            <button class="btn btn-primary copy-btn" data-copy="01763388121">বিকাশ নম্বর কপি করুন</button>
+            <small class="bkash-note">Payment number: 01763388121</small>
+          </div>
         </div>
       </div>
     </section>
-
     <section class="section legal-section" id="legal">
       <div class="container">
         <div class="section-heading">
@@ -299,11 +338,11 @@
       </div>
       <div>
         <h4>Quick Links</h4>
-        <a href="#about">About Us</a><a href="#programs">Programs</a><a href="#chairman">Chairman’s Message</a><a href="#donate">Donations</a>
+        <a href="#about">About Us</a><a href="#programs">Programs</a><a href="#chairman">Chairman’s Message</a><a href="#donate">Donations</a><a href="https://www.facebook.com/search/top?q=Elite%20Welfare%20Foundation" target="_blank" rel="noopener">Facebook Page ↗</a>
       </div>
       <div>
         <h4>Organization</h4>
-        <p>Registration: এস -১৪৯১৮/২৬</p>
+        <p>Registration: S-14917/2026</p>
         <p>Current office: Lalpur, Natore</p>
         <p>Working area: All over Bangladesh</p>
       </div>
