@@ -32,7 +32,14 @@ a{color:inherit;text-decoration:none}button{font:inherit}img{max-width:100%;disp
 .nav a:hover,.nav a.active{color:#fff;background:rgba(255,255,255,.08)}
 .nav a:last-child{background:var(--red);color:#fff;padding-inline:15px}
 .menu-toggle{display:none;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);color:#fff;border-radius:10px;padding:8px 11px;cursor:pointer}
-.hero{min-height:690px;position:relative;overflow:hidden;border-top:1px solid rgba(255,255,255,.07)}
+
+.hero{
+  min-height:690px;
+  position:relative;
+  overflow:hidden;
+  border-top:1px solid rgba(255,255,255,.07)
+}
+
 .hero-grid{position:absolute;inset:0;opacity:.23;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:72px 72px;mask-image:linear-gradient(to bottom,#000,transparent 95%)}
 .hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 75% 40%,rgba(200,33,39,.18),transparent 28%),linear-gradient(115deg,#0b1220 20%,#101a2a 58%,#0b1220)}
 .hero-orb{position:absolute;border-radius:50%;filter:blur(1px);opacity:.75;animation:float 7s ease-in-out infinite}
@@ -134,26 +141,23 @@ a{color:inherit;text-decoration:none}button{font:inherit}img{max-width:100%;disp
     linear-gradient(180deg,#67c5d8 0%,#8fd6df 35%,#dce9e5 61%,#7d8f8c 100%);
 }
 .hero:before{
-  content:"";
+   content:"";
   position:absolute;
   inset:0;
+
   background:
-    radial-gradient(ellipse at 18% 28%,rgba(255,255,255,.92) 0 5%,transparent 16%),
-    radial-gradient(ellipse at 91% 39%,rgba(255,255,255,.82) 0 5%,transparent 16%),
-    linear-gradient(180deg,transparent 52%,rgba(8,27,35,.05) 68%,rgba(5,19,25,.46) 100%);
+    linear-gradient(
+      180deg,
+      rgba(4,14,23,.20) 0%,
+      rgba(4,14,23,.08) 45%,
+      rgba(4,14,23,.58) 100%
+    );
+
   pointer-events:none;
+  z-index:1;
 }
 .hero:after{
-  content:"";
-  position:absolute;
-  left:-5%;right:-5%;bottom:-1px;height:43%;
-  background:
-    linear-gradient(155deg,transparent 0 25%,#132d32 25.3% 48%,transparent 48.3%),
-    linear-gradient(25deg,transparent 0 28%,#1c3638 28.3% 55%,transparent 55.3%),
-    linear-gradient(160deg,transparent 0 53%,#0b222a 53.3% 100%);
-  clip-path:polygon(0 47%,8% 38%,15% 49%,23% 28%,31% 47%,40% 23%,49% 46%,58% 30%,67% 50%,76% 25%,84% 45%,92% 31%,100% 48%,100% 100%,0 100%);
-  opacity:.94;
-  pointer-events:none;
+ display:none;
 }
 .hero-grid{opacity:.08;background-size:90px 90px;z-index:1}
 .hero-orb-one{width:420px;height:420px;right:-130px;top:100px;border-color:rgba(255,255,255,.28);box-shadow:inset 0 0 100px rgba(255,255,255,.12);z-index:1}
@@ -272,4 +276,88 @@ a{color:inherit;text-decoration:none}button{font:inherit}img{max-width:100%;disp
   .hero-meta{gap:5px}
   .hero-meta span{border-left:0;padding-left:0}
   .hero-side{right:-18px;bottom:30px;transform:scale(.32)}
+}
+
+
+/* =========================================
+   EXTRA DONATION IMAGE
+   ========================================= */
+
+.donation-image {
+    width: 100%;
+    margin: 0 auto 25px;
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+.donation-image img {
+    display: block;
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .donation-image img {
+        height: 250px;
+    }
+}
+
+
+/* =========================================
+   NEW HOMEPAGE / HERO BACKGROUND
+   ========================================= */
+
+.hero {
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.35),
+            rgba(255, 255, 255, 0.35)
+        ),
+        url("assets/hero-background.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* Impact bar icons */
+.impact-symbol{
+  width:42px;
+  height:42px;
+  flex:0 0 42px;
+  display:grid;
+  place-items:center;
+  border:1px solid rgba(200,33,39,.18);
+  border-radius:50%;
+  color:var(--red);
+  background:var(--red-soft);
+  transition:transform .25s ease, background .25s ease, box-shadow .25s ease;
+}
+
+.impact-symbol svg{
+  width:25px;
+  height:25px;
+  stroke:currentColor;
+  stroke-width:1.8;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+.impact-item:hover .impact-symbol{
+  transform:translateY(-2px);
+  background:#fff;
+  box-shadow:0 8px 20px rgba(200,33,39,.12);
+}
+
+.impact-symbol img{
+  width:28px;
+  height:28px;
+  display:block;
+  color:var(--red);
 }
