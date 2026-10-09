@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Relax Internet Network | Licensed ISP in Muladi, Barisal</title>
+<meta name="description" content="BTRC-licensed ISP delivering fiber broadband, dedicated bandwidth and network support across Barisal division.">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050914;--bg2:#0a1226;--ink:#e8f1ff;--mute:#8fa3c7;--cy:#1fe3ff;--vi:#8a5cff;--ok:#38ffb0;--line:rgba(120,170,255,.16)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 1rem/1.65 Manrope,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:Unbounded,Manrope,sans-serif;line-height:1.15;font-weight:700}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--cy);outline-offset:3px}
+.wrap{max-width:1160px;margin:auto;padding:0 22px}
+section{padding:96px 0;position:relative}
+h2{font-size:clamp(1.6rem,3.4vw,2.5rem);margin-bottom:14px}
+.lead{color:var(--mute);max-width:60ch;margin-bottom:44px}
+/* nav */
+nav{position:fixed;inset:0 0 auto;z-index:50;backdrop-filter:blur(14px);background:rgba(5,9,20,.65);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font:700 1.05rem Unbounded;display:flex;align-items:center;gap:10px}
+.logo img{height:38px;width:auto;display:block}
+.links{display:flex;gap:26px;align-items:center;font-weight:500;font-size:.93rem}
+.links a:hover{color:var(--cy)}
+.btn{display:inline-block;padding:13px 26px;border-radius:99px;font-weight:700;border:0;cursor:pointer;font-family:inherit;font-size:.95rem;background:linear-gradient(90deg,var(--cy),var(--vi));color:#031020;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 34px -8px var(--cy)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.burger{display:none;background:none;border:0;color:var(--ink);font-size:1.7rem;cursor:pointer}
+/* hero */
+#hero{min-height:100vh;display:flex;align-items:center;padding-top:110px;overflow:hidden}
+#net{position:absolute;inset:0;width:100%;height:100%}
+#hero .wrap{position:relative;z-index:2;pointer-events:none}
+#hero .wrap>*{pointer-events:auto}
+.tag{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);padding:7px 16px;border-radius:99px;color:var(--ok);font-size:.85rem;margin-bottom:26px;background:rgba(56,255,176,.06)}
+h1{font-size:clamp(2.1rem,6vw,4.4rem);max-width:15ch;margin-bottom:22px}
+h1 span{background:linear-gradient(90deg,var(--cy),var(--vi),var(--cy));background-size:200%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:flow 5s linear infinite}
+@keyframes flow{to{background-position:200%}}
+.sub{color:var(--mute);max-width:52ch;font-size:1.1rem;margin-bottom:34px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.meter{margin-top:48px;display:flex;gap:34px;flex-wrap:wrap}
+.meter b{display:block;font:700 1.7rem Unbounded;color:var(--cy)}
+.meter small{color:var(--mute)}
+/* stats */
+#stats{padding:0}
+.bar{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:22px;background:var(--bg2);margin-top:-60px;position:relative;z-index:3}
+.bar div{padding:28px;text-align:center;border-right:1px solid var(--line)}
+.bar div:last-child{border:0}
+.bar b{font:700 2rem Unbounded;color:var(--cy)}
+.bar span{display:block;color:var(--mute);font-size:.9rem}
+/* services */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:linear-gradient(160deg,var(--bg2),#070d1d);border:1px solid var(--line);border-radius:20px;padding:30px;position:relative;overflow:hidden;transform-style:preserve-3d;transition:border-color .3s}
+.card::before{content:"";position:absolute;width:260px;height:260px;left:var(--x,50%);top:var(--y,50%);translate:-50% -50%;background:radial-gradient(circle,rgba(31,227,255,.22),transparent 65%);opacity:0;transition:opacity .3s}
+.card:hover{border-color:rgba(31,227,255,.5)}
+.card:hover::before{opacity:1}
+.card>*{position:relative}
+.card svg{width:44px;height:44px;stroke:var(--cy);fill:none;stroke-width:1.6;margin-bottom:18px}
+.card h3{font-size:1.05rem;margin-bottom:10px}
+.card p{color:var(--mute);font-size:.95rem}
+/* planner */
+#plan{background:var(--bg2);border-block:1px solid var(--line)}
+.tabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:26px}
+.tab{padding:12px 22px;border-radius:99px;border:1px solid var(--line);background:none;color:var(--ink);cursor:pointer;font:600 .95rem Manrope;transition:.25s}
+.tab[aria-selected=true]{background:linear-gradient(90deg,var(--cy),var(--vi));color:#031020;border-color:transparent}
+.panel{display:grid;grid-template-columns:1.1fr 1fr;gap:34px;align-items:center;border:1px solid var(--line);border-radius:24px;padding:36px;background:var(--bg)}
+.panel h3{font-size:1.4rem;margin-bottom:12px}
+.panel ul{list-style:none;padding:0;margin:18px 0 26px}
+.panel li{padding:7px 0 7px 28px;position:relative;color:var(--mute)}
+.panel li::before{content:"";position:absolute;left:0;top:15px;width:14px;height:2px;background:var(--cy)}
+.gauge{aspect-ratio:1;max-width:300px;margin:auto;width:100%}
+.gauge circle{fill:none;stroke-width:12;stroke-linecap:round}
+.gauge .t{stroke:var(--line)}
+.gauge .v{stroke:url(#g);stroke-dasharray:440;stroke-dashoffset:440;transition:stroke-dashoffset 1.2s cubic-bezier(.2,.8,.2,1)}
+.gauge text{fill:var(--ink);font:700 22px Unbounded;text-anchor:middle}
+.gauge .s{font:500 11px Manrope;fill:var(--mute)}
+/* about */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.cred{display:grid;gap:14px}
+.cred div{border:1px solid var(--line);border-radius:16px;padding:18px 22px;background:var(--bg2)}
+.cred small{color:var(--mute);display:block}
+.cred b{word-break:break-all}
+/* contact */
+.map{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--bg2)}
+.map iframe{display:block;width:100%;height:380px;border:0;filter:invert(.9) hue-rotate(180deg) saturate(.8) brightness(.95)}
+input,textarea{width:100%;padding:15px 18px;border-radius:14px;border:1px solid var(--line);background:var(--bg2);color:var(--ink);font:inherit}
+input:focus,textarea:focus{border-color:var(--cy);outline:0}
+.info a{display:block;padding:14px 0;border-bottom:1px solid var(--line)}
+.info a:hover{color:var(--cy)}
+.info small{color:var(--mute);display:block}
+footer{border-top:1px solid var(--line);padding:34px 0;color:var(--mute);font-size:.9rem;text-align:center}
+.rv{opacity:0;transform:translateY(24px);transition:.8s}
+.rv.on{opacity:1;transform:none}
+@media(max-width:860px){
+.burger{display:block}
+.links{position:fixed;inset:68px 0 auto;background:var(--bg);flex-direction:column;padding:24px;gap:18px;border-bottom:1px solid var(--line);display:none}
+.links.open{display:flex}
+.bar{grid-template-columns:1fr 1fr}.bar div:nth-child(2){border:0}.bar div:nth-child(-n+2){border-bottom:1px solid var(--line)}
+.panel,.split{grid-template-columns:1fr}
+section{padding:70px 0}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+<a class="logo" href="#hero" aria-label="Relax Internet Network home"><img src="logo.png" alt="Relax Internet Network"></a>
+<button class="burger" aria-label="Menu" onclick="document.querySelector('.links').classList.toggle('open')">&#9776;</button>
+<div class="links" onclick="this.classList.remove('open')">
+<a href="#services">Services</a><a href="#plan">Find your fit</a><a href="#about">About</a><a href="#contact">Contact</a>
+<a class="btn" href="#contact">Contact us</a></div>
+</div></nav>
+
+<header id="hero">
+<canvas id="net" aria-hidden="true"></canvas>
+<div class="wrap">
+<div class="tag"><span style="width:8px;height:8px;border-radius:50%;background:var(--ok)"></span> BTRC licensed ISP, serving Barisal division</div>
+<h1>Fast fiber internet that <span>just stays on.</span></h1>
+<p class="sub">Unlimited broadband for homes, dedicated bandwidth for businesses and reliable network lines for schools and offices, delivered from Muladi, Barisal.</p>
+<div class="cta"><a class="btn" href="#contact">Contact us</a><a class="btn ghost" href="#plan">Find the right service</a></div>
+<div class="meter">
+<div><b id="mSpeed">0</b><small>Mbps live link demo</small></div>
+<div><b>Static IP</b><small>on corporate lines</small></div>
+<div><b>Symmetric</b><small>fiber-optic connections</small></div>
+</div>
+</div>
+</header>
+
+<section id="stats"><div class="wrap"><div class="bar">
+<div><b data-n="4">0</b><span>Core services</span></div>
+<div><b data-n="3">0</b><span>Customer groups served</span></div>
+<div><b>24/7</b><span>Phone line open</span></div>
+<div><b>BTRC</b><span>Licensed operator</span></div>
+</div></div></section>
+
+<section id="services"><div class="wrap">
+<h2 class="rv">What we build and run</h2>
+<p class="lead rv">We control the last mile with local fiber and wireless distribution, so your connection stays stable and fairly priced.</p>
+<div class="grid">
+<article class="card rv"><svg viewBox="0 0 48 48"><path d="M6 20c10-10 26-10 36 0M13 27c6-6 16-6 22 0M20 34c2.5-2.5 5.5-2.5 8 0"/><circle cx="24" cy="40" r="2"/></svg><h3>Broadband internet</h3><p>High-speed, unlimited, symmetric fiber-optic connections for homes and businesses.</p></article>
+<article class="card rv"><svg viewBox="0 0 48 48"><path d="M4 24h12l4-10 8 20 4-10h12"/></svg><h3>Local cable network</h3><p>We deploy and maintain stable local network lines to keep downtime to a minimum.</p></article>
+<article class="card rv"><svg viewBox="0 0 48 48"><rect x="6" y="9" width="36" height="24" rx="3"/><path d="M16 41h16M24 33v8"/></svg><h3>Cyber café and support hubs</h3><p>IT support and public internet access points that keep the community connected.</p></article>
+<article class="card rv"><svg viewBox="0 0 48 48"><rect x="8" y="8" width="32" height="12" rx="2"/><rect x="8" y="28" width="32" height="12" rx="2"/><path d="M14 14h2M14 34h2"/></svg><h3>Dedicated bandwidth</h3><p>Low-latency leased lines with dedicated static IPs for regional business operations.</p></article>
+</div></div></section>
+
+<section id="plan"><div class="wrap">
+<h2 class="rv">Find the service that fits you</h2>
+<p class="lead rv">Choose who you are and we will show what we recommend.</p>
+<div class="tabs" role="tablist"></div>
+<div class="panel rv" id="panel"></div>
+</div></section>
+
+<section id="about"><div class="wrap split">
+<div class="rv">
+<h2>A local ISP with national-grade credentials</h2>
+<p class="lead" style="margin-bottom:20px">Relax Internet Network works on a simple subscription model: one monthly fee, no surprises. We invest in local fiber and wireless infrastructure so people in developing regional areas get dependable connectivity at competitive prices.</p>
+<a class="btn ghost" href="#contact">Talk to our team</a>
+</div>
+<div class="cred rv">
+<div><small>BTRC license number</small><b>14.32.0000.702.47.197.23.981</b></div>
+<div><small>ISPAB membership</small><b>C-695</b></div>
+<div><small>Owner</small><b>Md. Kamruzzaman Khan</b></div>
+<div><small>Head office</small><b>College Road, Muladi, Barisal-8250, Bangladesh</b></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap split">
+<div class="rv">
+<h2>Find us</h2>
+<p class="lead" style="margin-bottom:24px">Visit our office in Muladi, or call us and we will come to you.</p>
+<div class="map"><iframe title="Relax Internet Network location" src="https://maps.google.com/maps?q=College%20Road%2C%20Muladi%2C%20Barisal&amp;z=15&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div></div>
+<div class="info rv">
+<a href="tel:+8801711635596"><small>Call us</small>+880 1711 635596</a>
+<a href="tel:+8801711388611"><small>Call us</small>+880 1711 388611</a>
+<a href="mailto:info@relaxcable.com"><small>Email</small>info@relaxcable.com</a>
+<a href="mailto:princekhan5@gmail.com"><small>Email</small>princekhan5@gmail.com</a>
+<a><small>Office</small>College Road, Muladi, Barisal-8250</a>
+</div></div></section>
+
+<footer><img src="logo-full.png" alt="Relax Internet Network" style="height:70px;width:auto;margin:0 auto 14px;display:block">&copy; <span id="y"></span> Relax Internet Network. BTRC License 14.32.0000.702.47.197.23.981 | ISPAB C-695</footer>
+
+<script>
+// year
+document.getElementById('y').textContent=new Date().getFullYear();
+// scroll reveal + counters
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+document.querySelectorAll('[data-n]').forEach(el=>{const n=+el.dataset.n;let i=0;const t=setInterval(()=>{el.textContent=++i;if(i>=n)clearInterval(t)},260)});
+// live speed demo
+const sp=document.getElementById('mSpeed');let cur=0;
+setInterval(()=>{const tgt=940+Math.random()*60;cur+=(tgt-cur)*.25;sp.textContent=Math.round(cur)},120);
+// spotlight on cards + tilt
+document.querySelectorAll('.card').forEach(c=>{
+ c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;
+  c.style.setProperty('--x',x+'px');c.style.setProperty('--y',y+'px');
+  c.style.transform=`perspective(700px) rotateX(${(.5-y/r.height)*7}deg) rotateY(${(x/r.width-.5)*7}deg)`});
+ c.addEventListener('pointerleave',()=>c.style.transform='')});
+// planner
+const D={
+ 'Home':{h:'Home broadband',p:'Smooth streaming, online classes and calls for the whole family.',l:['Unlimited fiber internet','Symmetric speeds','Stable local cable line','Local support team'],g:65},
+ 'Business':{h:'Business and retail',p:'Secure, always-on data for shops, offices and branches.',l:['Dedicated bandwidth','Dedicated static IP','Low-latency leased line','Priority support'],g:92},
+ 'Institution':{h:'Schools and offices',p:'Structured network access for colleges, schools and government offices.',l:['Structured network deployment','Dedicated bandwidth option','On-site maintenance','Public access hubs'],g:80}};
+const tabs=document.querySelector('.tabs'),panel=document.getElementById('panel');
+function show(k){
+ const d=D[k];[...tabs.children].forEach(b=>b.setAttribute('aria-selected',b.textContent===k));
+ panel.innerHTML=`<div><h3>${d.h}</h3><p style="color:var(--mute)">${d.p}</p><ul>${d.l.map(x=>`<li>${x}</li>`).join('')}</ul><a class="btn" href="#contact">Ask about this</a></div>
+ <svg class="gauge" viewBox="0 0 200 200"><defs><linearGradient id="g"><stop offset="0" stop-color="#1fe3ff"/><stop offset="1" stop-color="#8a5cff"/></linearGradient></defs>
+ <circle class="t" cx="100" cy="100" r="70"/><circle class="v" cx="100" cy="100" r="70" transform="rotate(-90 100 100)"/>
+ <text x="100" y="104">${d.g}%</text><text class="s" x="100" y="124">connection strength</text></svg>`;
+ requestAnimationFrame(()=>requestAnimationFrame(()=>panel.querySelector('.v').style.strokeDashoffset=440-440*d.g/100));
+}
+Object.keys(D).forEach(k=>{const b=document.createElement('button');b.className='tab';b.role='tab';b.textContent=k;b.onclick=()=>show(k);tabs.appendChild(b)});
+show('Home');
+// network canvas
+const cv=document.getElementById('net'),cx=cv.getContext('2d');let W,H,N=[],P=[],m={x:-999,y:-999};
+function size(){W=cv.width=cv.offsetWidth;H=cv.height=cv.offsetHeight;N=Array.from({length:Math.min(90,W/14|0)},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35}))}
+size();addEventListener('resize',size);
+cv.parentElement.addEventListener('pointermove',e=>{const r=cv.getBoundingClientRect();m.x=e.clientX-r.left;m.y=e.clientY-r.top});
+cv.parentElement.addEventListener('pointerleave',()=>m.x=-999);
+cv.parentElement.addEventListener('click',e=>{const r=cv.getBoundingClientRect();N.push({x:e.clientX-r.left,y:e.clientY-r.top,vx:0,vy:0});if(N.length>110)N.shift()});
+function draw(){
+ cx.clearRect(0,0,W,H);
+ N.forEach(a=>{a.x+=a.vx;a.y+=a.vy;if(a.x<0||a.x>W)a.vx*=-1;if(a.y<0||a.y>H)a.vy*=-1;
+  const dm=Math.hypot(a.x-m.x,a.y-m.y);if(dm<140){a.x+=(a.x-m.x)*.012;a.y+=(a.y-m.y)*.012}});
+ for(let i=0;i<N.length;i++)for(let j=i+1;j<N.length;j++){const a=N[i],b=N[j],d=Math.hypot(a.x-b.x,a.y-b.y);
+  if(d<130){cx.strokeStyle=`rgba(31,227,255,${(1-d/130)*.35})`;cx.lineWidth=1;cx.beginPath();cx.moveTo(a.x,a.y);cx.lineTo(b.x,b.y);cx.stroke();
+   if(Math.random()<.0008)P.push({a,b,t:0})}}
+ P=P.filter(p=>p.t<1);P.forEach(p=>{p.t+=.02;const x=p.a.x+(p.b.x-p.a.x)*p.t,y=p.a.y+(p.b.y-p.a.y)*p.t;cx.fillStyle='#38ffb0';cx.shadowBlur=14;cx.shadowColor='#38ffb0';cx.beginPath();cx.arc(x,y,2.6,0,7);cx.fill();cx.shadowBlur=0});
+ N.forEach(a=>{cx.fillStyle='#8a5cff';cx.beginPath();cx.arc(a.x,a.y,2,0,7);cx.fill()});
+ requestAnimationFrame(draw)}
+draw();
+</script>
+</body>
+</html>
