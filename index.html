@@ -25,7 +25,7 @@ h2{font-size:clamp(1.6rem,3.4vw,2.5rem);margin-bottom:14px}
 nav{position:fixed;inset:0 0 auto;z-index:50;backdrop-filter:blur(14px);background:rgba(5,9,20,.65);border-bottom:1px solid var(--line)}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
 .logo{font:700 1.05rem Unbounded;display:flex;align-items:center;gap:10px}
-.logo img{height:38px;width:auto;display:block}
+.logo img{height:55px;width:auto;display:block}
 .links{display:flex;gap:26px;align-items:center;font-weight:500;font-size:.93rem}
 .links a:hover{color:var(--cy)}
 .btn{display:inline-block;padding:13px 26px;border-radius:99px;font-weight:700;border:0;cursor:pointer;font-family:inherit;font-size:.95rem;background:linear-gradient(90deg,var(--cy),var(--vi));color:#031020;transition:transform .2s,box-shadow .2s}
@@ -38,7 +38,7 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 #hero .wrap{position:relative;z-index:2;pointer-events:none}
 #hero .wrap>*{pointer-events:auto}
 .tag{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);padding:7px 16px;border-radius:99px;color:var(--ok);font-size:.85rem;margin-bottom:26px;background:rgba(56,255,176,.06)}
-h1{font-size:clamp(2.1rem,6vw,4.4rem);max-width:15ch;margin-bottom:22px}
+h1{font-size: clamp(1.8rem, 5vw, 3.5rem);;max-width:15ch;margin-bottom:22px }
 h1 span{background:linear-gradient(90deg,var(--cy),var(--vi),var(--cy));background-size:200%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:flow 5s linear infinite}
 @keyframes flow{to{background-position:200%}}
 .sub{color:var(--mute);max-width:52ch;font-size:1.1rem;margin-bottom:34px}
@@ -79,6 +79,11 @@ h1 span{background:linear-gradient(90deg,var(--cy),var(--vi),var(--cy));backgrou
 .gauge .v{stroke:url(#g);stroke-dasharray:440;stroke-dashoffset:440;transition:stroke-dashoffset 1.2s cubic-bezier(.2,.8,.2,1)}
 .gauge text{fill:var(--ink);font:700 22px Unbounded;text-anchor:middle}
 .gauge .s{font:500 11px Manrope;fill:var(--mute)}
+/* speed test */
+#speedtest{background:var(--bg2);border-block:1px solid var(--line)}
+a.card{display:block;color:inherit}
+.card .go{display:inline-block;margin-top:18px;color:var(--cy);font-weight:700}
+.card .go::after{content:" \2197"}
 /* about */
 .split{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
 .cred{display:grid;gap:14px}
@@ -113,7 +118,7 @@ section{padding:70px 0}
 <button class="burger" aria-label="Menu" onclick="document.querySelector('.links').classList.toggle('open')">&#9776;</button>
 <div class="links" onclick="this.classList.remove('open')">
 <a href="#services">Services</a><a href="#plan">Find your fit</a><a href="#about">About</a><a href="#contact">Contact</a>
-<a class="btn" href="#contact">Contact us</a></div>
+<a class="btn" href="#speedtest">Internet Speed Test</a></div>
 </div></nav>
 
 <header id="hero">
@@ -167,6 +172,16 @@ section{padding:70px 0}
 <div><small>Owner</small><b>Md. Kamruzzaman Khan</b></div>
 <div><small>Head office</small><b>College Road, Muladi, Barisal-8250, Bangladesh</b></div>
 </div></div></section>
+
+<section id="speedtest"><div class="wrap">
+<h2 class="rv">Test your internet speed</h2>
+<p class="lead rv">Pick a speed test. It opens in a new tab and shows your download speed, upload speed and ping. Pause other downloads first for a more accurate result.</p>
+<div class="grid">
+<a class="card rv" href="https://fast.com" target="_blank" rel="noopener"><h3>Fast.com</h3><p>The quickest check. Opens and starts testing your download speed straight away.</p><span class="go">Run Fast.com</span></a>
+<a class="card rv" href="https://www.speedtest.net" target="_blank" rel="noopener"><h3>Ookla Speedtest</h3><p>The most widely used test. Shows download, upload and ping.</p><span class="go">Run Speedtest</span></a>
+<a class="card rv" href="https://openspeedtest.com" target="_blank" rel="noopener"><h3>OpenSpeedTest</h3><p>A free, open-source test with no ads that runs in your browser.</p><span class="go">Run OpenSpeedTest</span></a>
+</div>
+</div></section>
 
 <section id="contact"><div class="wrap split">
 <div class="rv">
